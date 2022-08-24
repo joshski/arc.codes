@@ -76,7 +76,7 @@ exports.handler = arc.http.async(handler)
 Ensure your app has a strong secret key. It should have a minimum length of 16 bytes.
 
 ```bash
-npx arc --env production --add ARC_APP_SECRET something-much-better-than-this
+npx arc env -e production --add ARC_APP_SECRET something-much-better-than-this
 ```
 
 🎲  Quickly generate a secret with `openssl`:
